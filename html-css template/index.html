@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            background-color:#002633;
+        }
+      
+        .navbar{
+            display: block;
+            justify-content: end;
+            flex-direction: row;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            position: relative;
+            
+            }
+        .navbar img{
+            /* margin: 0 auto; */
+             /* max-width: 100%; */
+             width: 200px;
+            position: absolute;
+             left:100px;
+             top: 30px;
+             
+         }
+        .navbar .nav svg{
+            position: absolute;
+            left: 0;
+            top: 30px;
+            display: none;
+            
+        }
+        
+        .navbar .nav svg :hover .drop-content{
+            display: block;
+
+        }
+        @media screen and (max-width:1000px) {
+            .navbar .nav svg{
+                display: block;
+            }
+            .nav-2 li a {
+                display: none;
+            }
+             }
+           
+           
+       /* .navbar .nav a{
+            text-decoration: none;
+            
+            
+            font-size: 35px;
+            
+            color: white;
+            font-weight: 750;
+
+        } */
+        .nav-2 ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: end;
+            gap: 30px;
+            padding-top: 30px;
+        }
+        .nav-2 li a{
+            text-decoration: none;
+            padding: 15px;
+            color:  #7697A2;
+            
+        }
+        .first{
+          
+        position: relative;
+        }
+        .para-1{
+            background-color: red;
+           width: 80%;
+            font-size: 200%;
+            padding: 30px;
+            color: white;
+            font-weight: 600;
+        }
+        .para-2{
+            background-color: white;
+            width: 60%;
+            font-size: 100%;
+            padding: 25px;
+            color: #22414b ;
+            
+            text-transform: uppercase;
+
+        }
+    
+      
+       /* section-2 */
+       
+
+       
+        /* section-sec-3 */
+      .sec-3{
+        padding:80px;
+        
+      }
+      .div3{
+        padding: 50px;
+        display: block;
+        text-align: center;
+        
+
+      }
+         .div3 h1{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        width: 100%;
+        text-transform: uppercase;
+        
+        padding: 20px;
+        
+
+      }
+    .div3 p{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 20px 60px;
+        
+        width: 100%;
+    }
+    @media screen and (max-width:480px){
+        .div3 h1,.div3 p{
+            width: 100%;
+        }
+    } 
+
+
+    /* section-sec-4 */
+
+    .sec-4 {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-direction: row;
+        width:100% ;
+    }
+    .sec-4 img{
+     width: 50%;
+    }
+    .div4{
+        width: 50%;
+        padding: 60px;
+        background-color: aqua;
+    }
+    .div4 h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-weight: 700;
+        font-size: 50px;
+    }
+    .div4 ul{
+        padding: 20px;
+    }
+    .div4 ul li{
+        padding: 10px;
+    }
+    @media screen and (max-width:850px){
+        .sec-4,.sec-4 img,.div4{
+            flex-direction: column;
+            width: 100%;
+        }
+      
+    }
+   
+
+
+
+    /* section-sec-5*/
+    .h-one{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .sec-5{
+        display: flex;
+        
+        flex-wrap: wrap;
+        
+        
+    
+     }
+     
+    .div5{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .div5 img{
+        margin-top: 20px;
+         
+    }
+    @media screen and (max-width:480px){
+        .div5{
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    /* section-sec-6 */
+
+    .sec-6{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 30px;
+        
+        
+    }
+
+    .div6 {
+        /* padding: 60px; */
+        text-align: right;
+    
+    }
+    .div6 h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+    }
+    .div6 p{
+        color: white;
+        padding-top: 10px;
+
+        
+    }
+    
+        
+        
+    
+    /* /section-sec-7 */
+
+    .sec-7{
+        display: flex;
+    }
+    .sec-7 div{
+        padding: 80px;
+
+    }
+
+
+
+
+        
+        @media screen and (max-width:757px){
+            .five img,.secnd,.left{
+                flex: 100%;
+               max-width:100%;
+                flex-direction: column;
+            }
+            .left .one,.left .two,.left .three,.left .four{
+                width: 100%;
+                flex-direction: column;
+            }
+
+        }
+
+        @media screen and (max-width:700px){
+            .second{
+                width: 50%;
+                flex-direction: column;
+                
+            }
+        }
+
+
+        /* @media screen and (max-width:800px){
+            .nav-2 ul{
+                flex-direction: column;
+                width: 100%;
+                
+            }
+        } */
+        @media screen and (max-width:800px){
+            .navbar{
+                
+                width: 100%;
+            }
+        }
+         /* @media screen and (max-width:400px){
+            .nav-2 ul{
+                flex-direction: column;
+                width: 100%;
+                margin-top: 50px; 
+            }
+        }  */
+        @media screen and (max-width:700px){
+            .first{
+                width: 100%;
+                flex-direction: column;
+                background-position: center;
+
+            }
+        }
+        @media screen and (max-width:360px){
+            .first{
+                background-position: center;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:800px){
+                .head1,.head2{
+                    width:100%
+                }
+        }
+
+        @media screen and (max-width:700px){
+            .sec-6 .six,.div6,.sec-6 a,.sec-6{
+                width: 100%;
+                flex-direction: column;
+                
+            }
+        }
+        
+        @media screen and (max-width:480px){
+           .sec-6 .six,.div6,.sec-6 a,.sec-6{
+                width: 100%;
+                
+            }
+        }
+
+        @media screen and (max-width:700px){
+            .sec-7,.sec-7 div{
+                flex-direction: column;
+                width: 100%;
+                
+            }
+        }
+    
+    
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        
+            <div class="nav" style="position: relative;">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  <div class="drop-content" style="display: none;  position: absolute;width:200px;padding: 30px;background-color: black;top: 100px;">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUTUS</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">GALLERY</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        
+                    </ul>
+                  </div>
+                 </div>
+                 <img src="/html-css template/images/logo.svg"  alt="">
+            
+     </div>
+
+
+            <div class="first" style="width: 100%;" >
+                <img src="/html-css template/images/carousel-01.jpg" style="width: 100%;" alt="">
+                <div style="position: absolute; top: 100px;">
+              
+                    <p class="para-1">WE ARE WEB DESIHGN HEROES</p>
+               
+                
+                    <p class="para-2">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+                </div>
+                
+            </div> 
+
+            <div class="one" style="display: flex;gap: 30px;">
+                <div class="two" style="display: flex;flex-direction: column; gap: 20px;">
+                    <div class="thr" style="display: flex;gap: 20px;">
+                        <div class="for" style="  background-color: red; display: flex;justify-content: center;align-items: center;text-align: center;">
+                            <div class="fiv" style="padding: 50px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-sliders2-vertical" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5M2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5m3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5M8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1m3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5m2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5"/>
+                                  </svg>
+                                  <h3>unlimited color varients</h3>
+                            </div>
+                        </div>
+                        <div class="for" style="background-color: rgb(47, 97, 204);width: 50%;height: auto; display: flex;justify-content: center;align-items: center;text-align: center;">
+                            <div >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-layers" viewBox="0 0 16 16">
+                                    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+                                  </svg>
+                                  <h3>many reusable elements</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thr" style="display: flex;gap: 20px;">
+                        <div class="for"  style="background-color: rgb(246, 246, 29);width:400px;height: 220px; display: flex;justify-content: center;align-items: center;text-align: center;">
+                            <div  class="fiv">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-gem" viewBox="0 0 16 16">
+                                    <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
+                                  </svg>
+                                  <h3>responsive layout</h3>
+                            </div>
+                        </div>
+                        <div class="for" style="background-color: rgb(50, 209, 241);width: 400px;height: 220px; text-align: center;display: flex;justify-content: center;align-items: center;text-align: center;">
+                            <div class="fiv" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+                                  </svg>
+                                  <h3>clean modern code</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seven">
+                    <img src="images/img-06.jpg" width="50%" alt="">
+                </div>
+               
+              </div>
+              
+
+
+
+            <section class="sec-3">
+                <div class="div3">
+                    <h1>Responsive Parallax Background</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore<br> magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br> tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+
+            </section>
+
+
+            <section class="sec-4">
+                <img src="/html-css template/images/img-01.jpg" alt="">
+                <div class="div4">
+                    <h2>Nonummy nibh euismod tincidunt ut laoreet<br> massa nec orci accusamus auctor aute</h2>
+                    <ul>
+                        <li>Sed diam nonummy nibh euismod tincidunt ut laoreet</li> 
+                        <li>Dolore magna aliquam erat volutpat</li>
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+                        <li>Sed diam nonummy nibh euismod tincidunt ut laoreet</li>
+                        <li>Dolore magna aliquam erat volutpat</li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+           <h1 class="h-one" style="text-align: center;padding: 50px;">    TOP REFERENCES</h1>
+            <section class="sec-5">
+                <div class="div5">
+                  <img src="/html-css template/images/thumb-01.jpg" style="width: 100%;padding-right: 10px;" alt="">
+                  <img src="/html-css template/images/thumb-02.jpg" style="width: 100%;padding-right: 10px;" alt="">
+
+                </div>
+                <div class="div5">
+                  <img src="/html-css template/images/thumb-03.jpg"style="width: 100%;padding-left:10px;"  alt="">
+                  <img src="/html-css template/images/thumb-04.jpg" style="width: 100%;padding-left:10px;" alt="">
+                </div>
+             </section>
+
+             <!-- section-6 -->
+             
+             
+             <div class="sec-6">
+                <div class="div6">
+                    <h3 class="h-three">Let's keep in touch</h3>
+                    <p>Deleniti pertinacia eu est, te his soluta quaestio <br>pericula illum vulputate lobortis facilisis.</p>
+                </div>
+                
+                    <div class="six"  style="display: flex; gap:30px;padding-left: 30px; width:260px;height: 150px;background-color: rgb(84, 84, 224); justify-content: center;align-items: center;">
+                        <div  >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                    </div>
+                    </div>
+                  
+                    <div class="six" style=" display: flex; width: 260px;height: 150px; background-color: rgb(87, 163, 230);justify-content: center;align-items: center;">
+                        <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                          </svg>
+                    </div>
+                    </div>
+                
+                <div class="six" style="display: flex; width: 260px;height: 150px;background-color: rgb(201, 49, 6);justify-content: center;align-items: center;">
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                      </svg>
+                </div>
+                </div>
+                
+                <div class="six" style="display: flex; width: 260px;height: 150px;background-color: rgb(34, 91, 165);align-items: center;justify-content: center;">
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                      </svg>
+                    </div>
+                
+                
+            </div>
+             </div>
+
+             <section class="sec-7" style="display: flex;">
+                <div style="text-align: center;">
+                    <h2 style="color: white;">Who We Are?</h2>
+                    <p style="text-align: justify;width: 300px;color: white;margin-top: 20px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                 </div>
+                 
+                 <div style="margin-left: 30px;">
+                    <h2 style="color: white;">Where We Are?</h2>
+                    <iframe  style="margin-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125531.64774481423!2d76.14084830995756!3d10.511376971476984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ee15ed42d1bb%3A0x82e45aa016ca7db!2sThrissur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1712050211815!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                 
+                 <div  >
+                    <h2 style="color: white;">Contact Us</h2>
+                    <p style="margin-top: 20px;"><b style="color: red;">P</b> 0800 4521 800 50</p>
+                    <p style="margin-top: 10px;"> <b style="color: red;">M</b>  <a class="text-primary-hover" href="mailto:contact@sampledomain.com">  contact@sampledomain.com</a></p>
+                    <p style="margin-top: 10px;"><b style="color: red;">M</b>  <a class="text-primary-hover" href="mailto:office@sampledomain.com">   office@sampledomain.com</a></p>
+                 </div>
+
+             </section>
+                   
+              
+
+
+            
+</body>
+</html>
